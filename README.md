@@ -6,3 +6,4 @@
 ## It allows users to add, subtract, multiply, delete, reset, divide and perform trigonometric functions on the app.
 
 ## Live demo 
+https://thatseogirl.github.io/trigonometric-cal/.
