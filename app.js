@@ -3,6 +3,9 @@ const inputValue = document.getElementById("result");
 const numberValues = document.querySelectorAll(".number");
 const result = document.getElementById("equal");
 const removedValue = document.getElementById("del");
+const calculateSin = document.getElementById("sin");
+const calculateCos = document.getElementById("cos");
+const calculateTan = document.getElementById("tan");
 
 clearField.addEventListener("click", handleReset);
 function handleReset() {
@@ -34,4 +37,25 @@ function handleDelete() {
     let deletedValue = currentValue.slice(0, -1);
 
     inputValue.textContent = deletedValue;
+}
+
+calculateSin.addEventListener("click", handleSin);
+function handleSin() {
+    let sinResult = Math.sin(inputValue.textContent);
+
+    inputValue.textContent = sinResult;
+}
+
+calculateCos.addEventListener("click", handleCos);
+function handleCos() {
+    let cosResult = Math.cos(inputValue.textContent);
+
+    inputValue.textContent = cosResult;
+}
+
+calculateTan.addEventListener("click", handleTan);
+function handleTan() {
+    let tanResult = Math.tan(inputValue.textContent);
+
+    inputValue.textContent = tanResult;
 }
