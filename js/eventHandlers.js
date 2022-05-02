@@ -3,27 +3,27 @@ function handleReset() {
 }
 
 function handleClick(event) {
-    let currentValue = inputValue.textContent;
-    let newValue = currentValue.concat(event.target.value);
+    const currentValue = inputValue.textContent;
+    const newValue = currentValue.concat(event.target.value);
     inputValue.textContent = newValue;
 }
 
 function handleResult() {
-    let fianlResult = eval(inputValue.textContent);
+    const fianlResult = eval(inputValue.textContent);
     inputValue.textContent = fianlResult;
 }
 
 function handleDelete() {
-    let currentValue = inputValue.textContent;
-    let deletedValue = currentValue.slice(0, -1);
+    const currentValue = inputValue.textContent;
+   const deletedValue = currentValue.slice(0, -1);
     inputValue.textContent = deletedValue;
 }
 
 function handleTrig(event) {
 
-    let input = inputValue.textContent;
-    let value = event.target.value;
-    let result;
+    const input = inputValue.textContent;
+    const value = event.target.value;
+    const result;
 
     if (value === 'sin') {
         result = Math.sin(input).toFixed(3);
